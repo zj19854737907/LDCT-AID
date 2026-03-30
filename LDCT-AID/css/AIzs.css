@@ -1,0 +1,124 @@
+    @media (min-width: 1400px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 90% !important;
+    }
+}
+:root {
+      /* 基础颜色 - 保持白色背景的板块 */
+      --background-light: #482A9F;  /* 板块背景 - 白色 */
+
+      --background-card: #482A9F;   /* 卡片背景 - 白色 */
+      --border-color: #38178F;      /* 边框颜色 - 浅灰色 */
+
+      /* 文字颜色 */
+      --text-color: rgba(255,255,255,0.7); /* 深色背景上的次要文字 */
+      --heading: #fff;               /* 深色背景上的标题文字 */
+      --text-primary: white;       /* 白色背景上的主要文字 - 深灰 */
+      --text-secondary: white;     /* 白色背景上的次要文字 - 中灰 */
+      --text-light: white;         /* 白色背景上的浅色文字 - 浅灰 */
+
+      /* 主题颜色 - 根据要求更新 */
+    --heading       : white;
+    --prime-one     : #0066FF;
+    --prime-two     : #FF7A41;
+    --prime-three   : #0066FF;
+    --prime-four    : #7736FF;
+    --prime-five    : #482A9F;
+    --gr-one        : linear-gradient(90.43deg, #FF8386 10.07%, #FF171D 99.78%);
+
+#chatbot-container h3 {
+				color: white;
+			}
+#chatbot-container div {
+    background-color: var(--background-card);
+    color: var(--text-primary);
+}
+.coze-chat-sdk-semi-spin-children div div div div {
+    /* gap: 5vh; */
+    margin-top:2%;
+    background-color: rgba(255,255,255,0.05) !important;
+    border-radius: 1vh;
+    /* background-color: green; */
+}
+.coze-chat-sdk-semi-spin-children div div div div:hover {
+    background-color: rgba(255,255,255,0.1) !important;
+}
+.coze-chat-sdk-semi-spin:first-child div:first-child div div div:first-child div:first-child {
+    background-color: transparent !important;
+}
+#chatbot-container div div div div div div:first-child {
+    /* background-color: green; */
+}
+.coze-chat-sdk-semi-spin-children div {
+    overflow: hidden;
+    /* border-right: 1px solid red;  */
+}
+.coze-chat-sdk-semi-spin-children div div {
+    /* gap: 2vh; */
+}
+.coz-fg-primary {
+    color: white !important;
+}
+#text {
+    color: var(--text-primary);
+}
+.auto-hide-last-sibling-br paragraph_7884d paragraph-element {
+    color: var(--text-primary);
+}
+#chatbot-container span,h3,h1,h2,p{
+    color: var(--text-primary);
+}
+.icon-icon {
+    color:white !important;
+}
+.coze-chat-sdk-semi-upload {
+    margin-left: 10px;
+}
+.coz-fg-primary:first-child {
+    /* background-color: rgba(255,255,255,0.5); */
+    border-radius: 1.5vh;
+}
+.rc-textarea {
+    border: 1px solid rgba(255,255,255,0.1) !important;
+    background-color: rgba(255,255,255,0.05)!important;
+}
+.rc-textarea::placeholder {
+    color: rgb(216, 216, 216)!important;
+
+}
+.coze-chat-sdk-semi-button {
+    background-color: rgba(255,255,255,0.05)!important;
+}
+.coze-chat-sdk-semi-button:hover {
+    background-color: rgba(255,255,255,0.5)!important;
+}
+.coz-stroke-plus {
+    border: 1px solid rgba(255,255,255,0.1) !important;
+}
+.rounded-normal  {
+    background-color: rgba(255,255,255,0.1)!important;
+}
+.rounded-normal div {
+    /* background-color: rgba(255,255,255,0.1) !important; */
+    background-color: transparent !important;
+}
+.chat-uikit-text-content {
+    background-color: green !important;
+}
+.absolute {
+    /* background-color: red!important;   */
+}
+.w-full {
+    background-color: transparent!important;
+}
+.coz-icon-button {
+    background-color: transparent!important;
+}
+[class*=" bi-"]::before {
+
+margin-left: -0.75vh;
+
+}}
+.paragraph-element code {
+    color: rgb(206, 206, 206);
+}

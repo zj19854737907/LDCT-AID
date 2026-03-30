@@ -1,0 +1,195 @@
+@media (max-width: 1199px) {
+    .block-style-three {
+        padding: 22px 10px 22px 10px;
+        margin-top: 20px;
+    }
+}
+
+
+.img-meta img {
+    width: 100%;      /* 宽度撑满父容器 */
+    height: 300px;    /* 设定一个统一的高度，你可以根据需要调整数值 */
+    object-fit: cover; /* 核心属性：图片会等比例缩放并填充容器，超出部分自动裁剪，不会变形 */
+    object-position: top; /* 如果是人像，确保头部不被裁掉，可以设置为 top */
+    border-radius: 8px; /* 可选：给图片加一点圆角，更好看 */
+	}
+	.tech-img-container {
+		width: 100%;
+		height: 300px;      /* 设定一个统一的展示区域高度 */
+		background: #f8f9fa; /* 给容器加一个浅灰色背景，填补大小不一留下的白边 */
+		display: flex;
+		align-items: center; /* 垂直居中 */
+		justify-content: center; /* 水平居中 */
+		border-radius: 10px;
+		padding: 15px;      /* 留一点内边距，让图看起来不拥挤 */
+		overflow: hidden;
+	}
+
+	.tech-img-container img {
+		max-width: 100%;
+		max-height: 100%;   /* 核心：确保图片永远不会超出 300px 的高度 */
+		object-fit: contain; /* 核心：完整显示整张图，不拉伸，不裁剪 */
+	}
+	    /* 基础动画样式 */
+.tech-card-hidden {
+    opacity: 0;
+    transform: translateY(30px);
+    clip-path: inset(100% 0 0 0);
+    transition: all 1.0s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* 当被 JS 激活后的状态 */
+.tech-card-active {
+    opacity: 1;
+    transform: translateY(0);
+    clip-path: inset(0 0 0 0);
+}
+
+/* 阶梯延迟：让元素一个个出来 */
+.delay-1 { transition-delay: 0s; }
+.delay-2 { transition-delay: 0.2s; }
+.delay-3 { transition-delay: 0.4s; }
+
+/* 扫描线动画：也需要对应的延迟 */
+.tech-card-active::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: #007bff;
+    box-shadow: 0 0 15px #007bff;
+    animation: scanLine 1.0s forwards;
+}
+
+/* 为扫描线也加上延迟 */
+.delay-2::after { animation-delay: 0.2s; }
+.delay-3::after { animation-delay: 0.4s; }
+
+@keyframes scanLine {
+    0% { top: 100%; }
+    100% { top: 0%; opacity: 0; }
+}
+
+
+/* 弹出层背景 */
+.image-overlay {
+    display: none; /* 初始隐藏 */
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.9); /* 半透明黑 */
+    z-index: 9999;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(5px); /* 背景模糊，更有高级感 */
+}
+
+/* 弹出的大图 */
+.image-overlay img {
+    max-width: 90%;
+    max-height: 90%;
+    border: 2px solid #007bff; /* 给大图加个蓝边框，契合医疗科技感 */
+    box-shadow: 0 0 30px rgba(0, 123, 255, 0.5);
+    transform: scale(0.9);
+    transition: transform 0.3s ease;
+    background-color: white;
+    border-radius: 10px;
+}
+
+/* 激活时的状态 */
+.image-overlay.active {
+    display: flex;
+}
+
+.image-overlay.active img {
+    transform: scale(1);
+}
+/* 外层包裹 */
+.roadmap-wrapper {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding-top: 50px;
+}
+
+/* 贯穿横线 */
+.roadmap-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 70px; /* 线条垂直位置 */
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: #e9ecef; /* 底色线 */
+    z-index: 0;
+}
+
+/* 蓝色进度线（可选：可以做成动态的） */
+.roadmap-step {
+    position: relative;
+    z-index: 1;
+    width: 25%;
+    text-align: center;
+}
+
+/* 圆圈编号 */
+.step-circle {
+    width: 40px;
+    height: 40px;
+    background: #007bff;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    font-weight: bold;
+    border: 5px solid #fff;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.3);
+    font-size: clamp(14px, 1.5vw, 16px);
+}
+
+/* 日期样式 */
+.step-date {
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 10px;
+    font-size: clamp(14px, 1.5vw, 16px);
+    margin-right: 10px;
+}
+
+/* 文字描述 */
+.step-content h6 {
+    font-size: 23px;
+    margin-bottom: 8px;
+    color: #e2e2e2;
+    font-weight: bold;
+}
+
+.step-content p {
+    font-size: 14px;
+    color: white;
+    padding: 0 10px;
+}
+
+/* 移动端适配：横向变垂直 */
+@media (max-width: 768px) {
+    .roadmap-wrapper {
+        flex-direction: column;
+    }
+    .roadmap-wrapper::before {
+        display: none; /* 手机端隐藏横线 */
+    }
+    .roadmap-step {
+        width: 100%;
+        text-align: left;
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 30px;
+    }
+    .step-circle {
+        margin: 0 20px 0 0;
+    }
+    
+}
