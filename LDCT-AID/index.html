@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="keywords" content="Data Science, Analytics, Data, sass, software company">
+		<meta name="description" content="Sinco - Data Science & Analytics HTML5 Template is designed especially for the agency, multipurpose and business and those who offer business-related services.">
+      	<meta property="og:site_name" content="Sinco">
+      	<meta property="og:url" content="https://heloshape.com/">
+      	<meta property="og:type" content="website">
+      	<meta property="og:title" content="Sinco - Data Science & Analytics HTML5 Template">
+		<meta name='og:image' content='images/assets/ogg.png'>
+		<!-- For IE -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!-- For Resposive Device -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- For Window Tab Color -->
+		<!-- Chrome, Firefox OS and Opera -->
+		<meta name="theme-color" content="#1E78FF">
+		<!-- Windows Phone -->
+		<meta name="msapplication-navbutton-color" content="#1E78FF">
+		<!-- iOS Safari -->
+		<meta name="apple-mobile-web-app-status-bar-style" content="#1E78FF">
+		<title>LDCT-AID</title>
+		<!-- Favicon -->
+		<link rel="icon" type="image/png" sizes="56x56" href="images/logo/favicon.svg">
+		<!-- Main style sheet -->
+		<link rel="stylesheet" type="text/css" href="css/style.css" media="all">
+		<!-- responsive style sheet -->
+		<link rel="stylesheet" type="text/css" href="css/responsive.css" media="all">
+
+		<!-- Fix Internet Explorer ______________________________________-->
+		<!--[if lt IE 9]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+			<script src="vendor/html5shiv.js"></script>
+			<script src="vendor/respond.js"></script>
+		<![endif]-->	
+	</head>
+
+	<body>
+		<script src="https://lf-cdn.coze.cn/obj/unpkg/flow-platform/chat-app-sdk/1.2.0-beta.19/libs/cn/index.js"></script>
+		<script src="js/aiagent.js"></script>
+		
+		<style>
+			.codeconSkillbar{
+				margin-bottom: 45px;
+			}
+		</style>
+
+
+		<div class="main-page-wrapper">
+			<!-- ===================================================
+				Loading Transition
+			==================================================== -->
+			<section>
+				<div id="preloader">
+					<div id="ctn-preloader" class="ctn-preloader">
+						<div class="animation-preloader">
+							<div class="icon"><img src="images/logo/favicon.svg" alt="" class="m-auto d-block" width="70"></div>
+							<div class="txt-loading mt-2">
+								<span data-text-preloader="L" class="letters-loading">
+									L
+								</span>
+								<span data-text-preloader="D" class="letters-loading">
+									D
+								</span>
+								<span data-text-preloader="C" class="letters-loading">
+									C
+								</span>
+								<span data-text-preloader="T" class="letters-loading">
+									T
+								</span>
+								<span data-text-preloader="-" class="letters-loading">
+									-
+								</span>
+								<span data-text-preloader="A" class="letters-loading">
+									A
+								</span>
+								<span data-text-preloader="I" class="letters-loading">
+									I
+								</span>
+								<span data-text-preloader="D" class="letters-loading">
+									D
+								</span>
+							</div>
+						</div>	
+					</div>
+				</div>
+			</section>
+
+
+			<!-- 
+			=============================================
+				Search
+			============================================== 
+			-->
+			<div class="offcanvas offcanvas-top theme-search-form bg-three justify-content-center" tabindex="-1" id="offcanvasTop">
+				<button type="button" class="close-btn tran3s" data-bs-dismiss="offcanvas" aria-label="Close"><i class="bi bi-x-lg"></i></button>
+				<div class="form-wrapper">
+					<form action="#">
+						<input type="text" placeholder="输入查找内容....">
+					</form>
+				</div> <!-- /.form-wrapper -->
+			</div>
+
+
+			<!-- 
+			=============================================
+				Theme Main Menu
+			============================================== 
+			-->
+			<header class="theme-main-menu sticky-menu theme-menu-two">
+				<div class="inner-content">
+					<div class="top-header">
+						<div class="container">
+							<div class="d-flex align-items-center justify-content-between">
+								<div class="call-button">联系我们<a href="#">(+86) 321 782 110</a></div>
+								<div class="right-widget d-flex align-items-center">
+									<div class="lang-dropdown me-3 me-sm-4">
+										<button class="dropdown-toggle" type="button" id="langDropdown" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
+										    CN
+										</button>
+										<ul class="dropdown-menu" aria-labelledby="langDropdown">
+										    <li><a class="dropdown-item" href="#">Fre</a></li>
+										    <li><a class="dropdown-item" href="#">Ind</a></li>
+										    <li><a class="dropdown-item" href="#">Rus</a></li>
+										</ul>
+									</div>
+									<button class="menu-search-btn tran3s m0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"><i class="bi bi-search"></i></button>
+								</div> <!-- /.right-widget -->
+							</div>
+						</div> <!-- /.container -->
+					</div> <!-- /.top-header -->
+					<div class="container d-flex align-items-center justify-content-between">
+						<div class="logo order-lg-0"><a href="index.html" class="d-block"><img src="images/logo/logo-2-light.png" alt="" width="200px"></a></div>
+						<a href="signin.html" class="get-in-touch-btn d-none d-lg-block order-lg-3">登录</a>
+						<nav class="navbar navbar-expand-lg order-lg-2">
+							<button class="navbar-toggler d-block d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+						    	<span></span>
+						 	</button>
+						    <div class="collapse navbar-collapse" id="navbarNav">
+						    	<ul class="navbar-nav">
+						    		<li class="d-block d-lg-none"><div class="logo"><a href="index.html"><img src="images/logo/logo-2-light.png" alt="" width="130"></a></div></li>
+							        <li class="nav-item">
+							        	<a href="index.html" class="nav-link active" style="white-space: nowrap;">首页</a>
+							        </li>
+									
+						            <li class="nav-item">
+							        	<a class="nav-link" href="ctjz.html" role="button">CT降噪
+										</a>
+						            </li>
+						            <li class="nav-item">
+							        	<a class="nav-link" href="ycjc.html" role="button">异常检测</a>
+						            </li>
+							        <li class="nav-item">
+							        	<a class="nav-link" href="AIzs.html" role="button">AI助手</a>
+						            </li>
+						            <li class="nav-item">
+							        	<a class="nav-link" href="bggl.html" role="button">报告管理</a>
+						            </li>
+									<li class="nav-item">
+										<a href="about-us1.html" class="nav-link">关于我们</a>
+									</li>
+									
+									
+						    	</ul>
+						    	<!-- Mobile Content -->
+						    	<div class="mobile-content d-block d-lg-none">
+						    		<div class="d-flex flex-column align-items-center justify-content-center mt-70">
+						    			<a href="signin.html" class="get-in-touch-btn">登录</a>
+						    		</div>
+						    	</div> <!-- /.mobile-content -->
+						    </div>
+						</nav>
+					</div>
+				</div> <!-- /.inner-content -->
+			</header> <!-- /.theme-main-menu -->
+
+
+			
+			<!-- 
+			=============================================
+				Theme Hero Banner
+			============================================== 
+			-->
+			<div class="hero-banner-two">
+				<div class="bg-wrapper">
+					<div class="container">
+						<div class="row">
+							<div class="col-xl-6 col-md-7">
+								<h1 class="hero-heading">LDCT-<span class="text-primary">AI</span>D</h1>
+								<p class="text-lg pt-25 pb-40 lg-pb-20 sm-pt-10">基于大模型的低剂量 CT 图像降噪与多维辅助诊断系统</p>
+								<ul class="style-none button-group d-sm-flex align-items-center">
+									<li class="me-4 mt-10"><a href="about-us1.html" class="btn-one ripple-btn">Explore</a></li>
+									<li><a class="demo-btn tran3s mt-10" href="contact-us.html">Request a demo</a></li>
+								</ul>
+							</div>
+						</div>
+					</div> <!-- /.container -->
+					<div class="illustration-holder">
+						<img src="images/assets/ils_04.svg" alt="" class="main-illustration w-100">
+						<img src="images/assets/ils_04_1.svg" alt="" class="shapes shape-one">
+						<img src="images/assets/ils_04_2.svg" alt="" class="shapes shape-two">
+						<img src="images/assets/ils_04_2.svg" alt="" class="shapes shape-three">
+						<img src="images/assets/ils_04_3.svg" alt="" class="shapes shape-four">
+						<img src="images/assets/ils_04_4.svg" alt="" class="shapes shape-five">
+						<img src="images/assets/ils_04_5.svg" alt="" class="shapes shape-six">
+						<img src="images/assets/ils_04_6.svg" alt="" class="shapes shape-seven">
+						<div class="card-one shapes d-flex align-items-center justify-content-center">
+							<div class="icon"><i class="bi bi-check-lg"></i></div>
+							<h6>A++ Performance</h6>
+						</div> <!-- /.card-one -->
+						<div class="card-two shapes text-center">
+							<div class="icon"><i class="bi bi-check-lg"></i></div>
+							<div class="main-count"><span class="counter">20</span>k</div>
+							<div class="info">5星好评  </div>
+							<ul class="style-none d-flex justify-content-center rating">
+								<li><i class="bi bi-star-fill"></i></li>
+								<li><i class="bi bi-star-fill"></i></li>
+								<li><i class="bi bi-star-fill"></i></li>
+								<li><i class="bi bi-star-fill"></i></li>
+								<li><i class="bi bi-star-fill"></i></li>
+							</ul>
+						</div> <!-- /.card-two -->
+					</div> <!-- /.illustration-holder -->
+				</div> <!-- /.bg-wrapper -->
+			</div> <!-- /.hero-banner-two -->
+
+
+
+			<!--
+			=====================================================
+				Counter Section One
+			=====================================================
+			-->
+			<div class="counter-section-one fancy-bg">
+				<div class="container">
+					<div class="inner-container">
+						<div class="row justify-content-center">
+							<div class="col-md-4 col-sm-6" data-aos="fade-up">
+								<div class="counter-block-one text-center mb-20">
+									<div class="main-count"><span class="counter">40</span>%↓</div>
+									<p>早期病灶漏诊率降低<br>人工智能方案助力诊断精准度升级</p>
+								</div> <!-- /.counter-block-one -->
+							</div>
+							<div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="100">
+								<div class="counter-block-one text-center mb-20">
+									<div class="main-count"><span class="counter">80</span>w+元</div>
+									<p>医院年度运营成本节省<br>AI 驱动无纸化报告 + 重复扫描减少</p>
+								</div> <!-- /.counter-block-one -->
+							</div>
+							<div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="200">
+								<div class="counter-block-one text-center mb-20">
+									<div class="main-count"><span class="counter">30</span>%↓</div>
+									<p>低剂量 CT 重复扫描率降低<br>减少不必要的辐射暴露与资源消耗</p>
+								</div> <!-- /.counter-block-one -->
+							</div>
+						</div>
+					</div> <!-- /.inner-container -->
+				</div>
+				<img src="images/shape/shape_04.svg" alt="" class="shapes shape-one">
+				<img src="images/shape/shape_05.svg" alt="" class="shapes shape-two">
+			</div> <!-- /.counter-section-one -->
+
+
+
+			<!--
+			=====================================================
+				Partner Section Two
+			=====================================================
+			-->
+			<div class="partner-section-two mt-110">
+				<div class="container">
+					<div class="title-style-one text-center" data-aos="fade-up">
+						<div class="sc-title-three">超过150,000+客户</div>
+						<h2 class="main-title md">加入27,000多家已达成的公司</h2>
+					</div> <!-- /.title-style-one -->
+
+					<div class="row">
+						<div class="col-12 m-auto">
+							<ul class="style-none text-center">
+								<li class="partner-logo-block-one d-inline-block" data-aos="fade-up"><a href="#" class="d-flex align-items-center justify-content-center"><img src="images/logo/Plogo-13.png" alt=""></a></li>
+								<li class="partner-logo-block-one d-inline-block" data-aos="fade-up" data-aos-delay="100"><a href="#" class="d-flex align-items-center justify-content-center"><img src="images/logo/Plogo-12.png" alt=""></a></li>
+								<li class="partner-logo-block-one d-inline-block" data-aos="fade-up" data-aos-delay="200"><a href="#" class="d-flex align-items-center justify-content-center"><img src="images/logo/Plogo-9.png" alt=""></a></li>
+								<li class="partner-logo-block-one d-inline-block" data-aos="fade-up" data-aos-delay="300"><a href="#" class="d-flex align-items-center justify-content-center"><img src="images/logo/Plogo-7.png" alt=""></a></li>
+								<li class="partner-logo-block-one d-inline-block" data-aos="fade-up" data-aos-delay="400"><a href="#" class="d-flex align-items-center justify-content-center"><img src="images/logo/Plogo-8.png" alt=""></a></li>
+							</ul>
+						</div>
+					</div>
+				</div> <!-- /.container -->
+			</div> <!-- /.partner-section-two -->
+
+			
+
+
+			<!-- 
+			=============================================
+				Feature Section Four
+			============================================== 
+			-->
+			<div class="fancy-feature-four position-relative mt-110 lg-mt-50">
+				<div class="bg-wrapper">
+					<div class="inner-container">
+						<div class="container">
+							<div class="row gx-xxl-5">
+								<div class="col-lg-4 mt-40 d-flex" data-aos="fade-up">
+									<div class="d-flex justify-content-center flex-column">
+										<div class="title-style-one">
+											<div class="sc-title-three">服务</div>
+											<h2 class="main-title">我们的医疗 AI 专长领域</h2>
+										</div> <!-- /.title-style-one -->
+										<div><div class="btn-three rev mt-35 lg-mt-20">了解更多详情，<a href="service-V1.html">点击这里 ➤<i class="fas fa-chevron-right"></i></a></div></div>
+									</div>
+								</div>
+								<div class="col-lg-4 col-sm-6 mt-40 d-flex" data-aos="fade-up" data-aos-delay="100">
+									<div class="block-style-four">
+										<div class="icon d-flex align-items-end justify-content-center"><img src="images/icon/icon_08.svg" alt=""></div>
+										<a href="service-V1.html"><h5>低剂量 CT 智能降噪 </h5></a>
+										<p>将低剂量 CT 噪声转化为高清可信影像，为早期病变识别筑牢根基。</p>
+										<a href="service-V1.html" class="more-btn"><img src="images/icon/icon_13.svg" alt="" class="tran3s"></a>
+									</div> <!-- /.block-style-four -->
+								</div>
+								<div class="col-lg-4 col-sm-6 mt-40 d-flex" data-aos="fade-up" data-aos-delay="200">
+									<div class="block-style-four">
+										<div class="icon d-flex align-items-end justify-content-center"><img src="images/icon/icon_09.svg" alt=""></div>
+										<a href="service-V1.html"><h5>病灶智能检测</h5></a>
+										<p>穿透影像干扰，精准定位微小病灶，让早期病变无处隐藏，助力诊断效率飞跃。</p>
+										<a href="service-V1.html" class="more-btn"><img src="images/icon/icon_13.svg" alt="" class="tran3s"></a>
+									</div> <!-- /.block-style-four -->
+								</div>
+								<div class="col-lg-4 col-sm-6 mt-40 d-flex" data-aos="fade-up" data-aos-delay="100">
+									<div class="block-style-four">
+										<div class="icon d-flex align-items-end justify-content-center"><img src="images/icon/icon_10.svg" alt=""></div>
+										<a href="service-V1.html"><h5>报告智能生成</h5></a>
+										<p>自动化生成结构化可视化报告，为医生节省 80% 文书时间，聚焦诊疗核心。.</p>
+										<a href="service-V1.html" class="more-btn"><img src="images/icon/icon_13.svg" alt="" class="tran3s"></a>
+									</div> <!-- /.block-style-four -->
+								</div>
+								<div class="col-lg-4 col-sm-6 mt-40 d-flex" data-aos="fade-up" data-aos-delay="200">
+									<div class="block-style-four">
+										<div class="icon d-flex align-items-end justify-content-center"><img src="images/icon/icon_11.svg" alt=""></div>
+										<a href="service-V1.html"><h5>基层医疗 AI 赋能</h5></a>
+										<p>打破资源壁垒，将优质诊断能力下沉基层，让偏远患者享同质医疗服务。</p>
+										<a href="service-V1.html" class="more-btn"><img src="images/icon/icon_13.svg" alt="" class="tran3s"></a>
+									</div> <!-- /.block-style-four -->
+								</div>
+								<div class="col-lg-4 mt-40 d-flex" data-aos="fade-up" data-aos-delay="300">
+									<div class="block-style-four">
+										<div class="icon d-flex align-items-end justify-content-center"><img src="images/icon/icon_12.svg" alt=""></div>
+										<a href="service-V1.html"><h5>辐射剂量智能优化</h5></a>
+										<p>智能平衡辐射与影像质量，减少 30% 不必要辐射，守护患者健康防线。</p>
+										<a href="service-V1.html" class="more-btn"><img src="images/icon/icon_13.svg" alt="" class="tran3s"></a>
+									</div> <!-- /.block-style-four -->
+								</div>
+							</div>
+						</div>
+					</div> <!-- /.inner-container -->
+				</div> <!-- /.bg-wrapper -->
+				<img src="images/shape/shape_06.svg" alt="" class="shapes shape-one">
+				<img src="images/shape/shape_07.svg" alt="" class="shapes shape-two">
+			</div> <!-- /.fancy-feature-four -->
+			
+
+
+			<!-- 
+			=============================================
+				Feature Section Two
+			============================================== 
+			-->
+			<div class="fancy-feature-two position-relative mt-200 lg-mt-120">
+				<div class="container">
+					<div class="row">
+						<div class="col-xxl-5 col-lg-6 col-md-7 ms-auto">
+							<div class="block-style-two" data-aos="fade-left">
+								<div class="title-style-one">
+									<div class="sc-title-three">服务超 500 + 医疗机构</div>
+									<h2 class="main-title">医疗 AI 领域的诊断革新者 </h2>
+								</div> <!-- /.title-style-one -->
+								<p class="pt-10 pb-20 lg-pb-10">LDCT-AID 以智能技术重构低剂量 CT 诊断流程，助力医疗机构实现精准高效诊疗</p>
+								<ul class="style-none list-item color-rev">
+									<li>低剂量 CT 智能降噪，高清成像与辐射安全兼顾</li>
+									<li>病灶智能检测，毫米级病变精准识别</li>
+									<li>多模态融合诊断，复杂病例多维决策支持</li>
+									<li>报告自动化生成，为医生节省 80% 文书时间</li>
+								</ul>
+								<div class="btn-three rev mt-55 lg-mt-30">想了解更多 LDCT-AID 的价值？<a href="about-us1.html">点击这里 ➤<i class="fas fa-chevron-right"></i></a></div>
+							</div> <!-- /.block-style-two -->
+						</div>
+					</div>
+				</div> <!-- /.container -->
+				<div class="illustration-holder-two sm-mt-40">
+					<img src="images/assets/ils_05.svg" alt="" class="main-illustration w-100">
+					<img src="images/assets/ils_05_1.svg" alt="" class="shapes shape-one">
+					<img src="images/assets/ils_05_2.svg" alt="" class="shapes shape-two" data-aos="fade-up" data-aos-anchor=".fancy-feature-two" data-aos-delay="100" data-aos-duration="2000">
+					<img src="images/assets/ils_05_3.svg" alt="" class="shapes shape-three" data-aos="fade-up" data-aos-anchor=".fancy-feature-two" data-aos-delay="150" data-aos-duration="2000">
+					<img src="images/assets/ils_05_4.svg" alt="" class="shapes shape-four">
+					<img src="images/assets/ils_05_5.svg" alt="" class="shapes shape-five">
+				</div> <!-- /.illustration-holder-two -->
+			</div> <!-- /.fancy-feature-two -->
+
+
+
+
+			<!--
+			=====================================================
+				Feedback Slider Two
+			=====================================================
+			-->
+			<div class="feedback-section-two mt-170 xl-mt-100 md-mt-60" data-aos="fade-up" style="display: none;">
+				<img src="images/shape/shape_08.svg" alt="" class="shapes shape-one">
+				<img src="images/shape/shape_09.svg" alt="" class="shapes shape-two">
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="col-xl-5 col-lg-4 col-md-5 col-sm-8">
+							<div class="title-style-one text-center text-sm-start xs-pb-20">
+								<h2 class="main-title">Client’s success Stories.</h2>
+							</div> <!-- /.title-style-one -->
+						</div>
+						<div class="col-xl-6 col-lg-8 col-md-7 col-sm-4 ms-auto d-flex justify-content-center justify-content-sm-end">
+							<ul class="slider-arrows slick-arrow-two d-flex style-none">
+								<li class="prev_f1 slick-arrow ripple-btn" style=""><i class="bi bi-arrow-left"></i></li>
+								<li class="next_f1 slick-arrow ripple-btn" style=""><i class="bi bi-arrow-right"></i></li>
+							</ul>
+						</div>
+					</div>
+				</div> <!-- /.container -->
+				<div class="inner-content mt-60 md-mt-40">
+					<div class="slider-wrapper">
+						<div class="feedback_slider_two">
+							<div class="item">
+								<div class="feedback-block-two d-sm-flex">
+									<div class="img-meta">
+										<img src="images/media/img_01.jpg" alt="">
+										<a class="fancybox video-icon" data-fancybox="" href="https://www.youtube.com/embed/aXFSJTjVjw0">
+											<i class="bi bi-play-fill"></i>
+										</a>
+									</div>
+									<div class="text-wrapper">
+										<div class="icon d-flex align-items-end"><img src="images/logo/Plogo-15.png" alt=""></div>
+										<div class="camp-name">Giant cloud service inc</div>
+										<p>We’v 9,000 agents across around the country, Find agents near your neighborhood.</p>
+										<a href="#" class="read-btn d-flex align-items-center justify-content-between">
+											<span>Continue Reading</span>
+											<img src="images/icon/icon_14.svg" alt="" class="arrow">
+										</a>
+									</div> <!-- /.text-wrapper -->
+								</div> <!-- /.feedback-block-two -->
+							</div>
+							<div class="item">
+								<div class="feedback-block-two d-sm-flex">
+									<div class="img-meta">
+										<img src="images/media/img_02.jpg" alt="">
+										<a class="fancybox video-icon" data-fancybox="" href="https://www.youtube.com/embed/aXFSJTjVjw0">
+											<i class="bi bi-play-fill"></i>
+										</a>
+									</div>
+									<div class="text-wrapper">
+										<div class="icon d-flex align-items-end"><img src="images/logo/Plogo-4.png" alt=""></div>
+										<div class="camp-name">UK Marketing Agency.</div>
+										<p>We’v 9,000 agents across around the country, Find agents near your neighborhood.</p>
+										<a href="#" class="read-btn d-flex align-items-center justify-content-between">
+											<span>Continue Reading</span>
+											<img src="images/icon/icon_14.svg" alt="" class="arrow">
+										</a>
+									</div> <!-- /.text-wrapper -->
+								</div> <!-- /.feedback-block-two -->
+							</div>
+							<div class="item">
+								<div class="feedback-block-two d-sm-flex">
+									<div class="img-meta">
+										<img src="images/media/img_03.jpg" alt="">
+										<a class="fancybox video-icon" data-fancybox="" href="https://www.youtube.com/embed/aXFSJTjVjw0">
+											<i class="bi bi-play-fill"></i>
+										</a>
+									</div>
+									<div class="text-wrapper">
+										<div class="icon d-flex align-items-end"><img src="images/logo/Plogo-3.png" alt=""></div>
+										<div class="camp-name">Netflix Marketing Agency.</div>
+										<p>We’v 9,000 agents across around the country, Find agents near your neighborhood.</p>
+										<a href="#" class="read-btn d-flex align-items-center justify-content-between">
+											<span>Continue Reading</span>
+											<img src="images/icon/icon_14.svg" alt="" class="arrow">
+										</a>
+									</div> <!-- /.text-wrapper -->
+								</div> <!-- /.feedback-block-two -->
+							</div>
+							<div class="item">
+								<div class="feedback-block-two d-sm-flex">
+									<div class="img-meta">
+										<img src="images/media/img_04.jpg" alt="">
+										<a class="fancybox video-icon" data-fancybox="" href="https://www.youtube.com/embed/aXFSJTjVjw0">
+											<i class="bi bi-play-fill"></i>
+										</a>
+									</div>
+									<div class="text-wrapper">
+										<div class="icon d-flex align-items-end"><img src="images/logo/Plogo-2.png" alt=""></div>
+										<div class="camp-name">Sinco Digital Agency.</div>
+										<p>We’v 9,000 agents across around the country, Find agents near your neighborhood.</p>
+										<a href="#" class="read-btn d-flex align-items-center justify-content-between">
+											<span>Continue Reading</span>
+											<img src="images/icon/icon_14.svg" alt="" class="arrow">
+										</a>
+									</div> <!-- /.text-wrapper -->
+								</div> <!-- /.feedback-block-two -->
+							</div>
+						</div> <!-- /.feedback_slider_two -->
+					</div> <!-- /.slider-wrapper -->
+				</div> <!-- /.inner-content -->
+			</div> <!-- /.feedback-section-two -->
+
+
+
+			<!-- 
+			=============================================
+				Feature Section Five
+			============================================== 
+			-->
+			<div class="fancy-feature-five position-relative mt-50 xs-mt-20">
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="col-xxl-4 col-lg-5 col-md-6">
+							<div class="block-style-five pt-60 md-pt-20" data-aos="fade-right">
+								<div class="title-style-one">
+									<div class="sc-title-three">顶级医疗 AI 诊断方案</div>
+									<h2 class="main-title">为何选择 <br>LDCT-AID？</h2>
+								</div> <!-- /.title-style-one -->
+								<p class="pt-10 pb-70">告诉我们您的诊疗需求，我们为您提供专业的智能诊断支持</p>
+								<div class="skills-progress skills">
+									<div class="habilidades_contenedor">
+								        <div class="codeconSkills">
+								            <div class="codeconSkillbar mb-80 md-mb-60">
+								            	<div class="skill-text">
+								            		<span class="codeconSkillArea">多模态 AI 融合技术</span>
+								            	</div>
+								                <div class="skillBar" data-percent="73%" style="background: #F25DFF;">
+								                	<span class="PercentText">87%</span>
+								                </div>
+								            </div>
+								            <div class="codeconSkillbar">
+								            	<div class="skill-text">
+								            		<span class="codeconSkillArea ">早期病灶检出准确率</span>
+								                    
+								            	</div>
+									            <div class="skillBar" data-percent="91%" style="background: #00E8FA;">
+									                <span class="PercentText">92%</span>
+									            </div>
+								            </div>
+								    	</div> <!-- /.codeconSkills -->
+								    </div> <!-- /.habilidades_contenedor -->
+								</div> <!-- /.skills-progress -->
+								<a href="about-us1.html" class="btn-five ripple-btn mt-60 lg-mt-50">了解更多</a>
+							</div> <!-- /.block-style-five -->
+						</div>
+
+						<div class="col-xxl-8 col-lg-7 col-md-6 text-end">
+							<div class="illustration-holder d-inline-block position-relative xs-mt-20">
+								<img src="images/assets/ils_06.svg" alt="" class="main-illustration w-100">
+								<img src="images/assets/ils_06_1.svg" alt="" class="shapes shape-one">
+								<img src="images/assets/ils_06_2.svg" alt="" class="shapes shape-two">
+								<img src="images/assets/ils_06_3.svg" alt="" class="shapes shape-three" data-aos="fade-down" data-aos-duration="1800">
+								<img src="images/assets/ils_06_4.svg" alt="" class="shapes shape-four" data-aos="fade-left" data-aos-duration="1800">
+								<img src="images/assets/ils_06_5.svg" alt="" class="shapes shape-five">
+							</div><!--  /.illustration-holder -->
+						</div>
+					</div>
+				</div> <!-- /.container -->
+			</div> <!-- /.fancy-feature-five -->
+
+
+
+			<!-- 
+			=============================================
+				Feature Section Six
+			============================================== 
+			-->
+			<div class="fancy-feature-six position-relative mt-80">
+				<div class="container">
+					<div class="bg-wrapper">
+						<div class="row gx-xxl-5 justify-content-center">
+							<div class="col-lg-4 col-sm-6" data-aos="fade-up">
+								<div class="block-style-six text-center mt-40">
+									<div class="icon"><i class="bi bi-check-lg"></i></div>
+									<h6>专业医疗支持</h6>
+									<p>提供专家级医疗 AI 互动服务，从影像降噪到病灶诊断，全流程辅助临床决策，如专属医疗智囊随时响应。</p>
+								</div> <!-- /.block-style-six -->
+							</div>
+							<div class="col-lg-4 col-sm-6" data-aos="fade-up" data-aos-delay="100">
+								<div class="block-style-six text-center mt-40">
+									<div class="icon"><i class="bi bi-check-lg"></i></div>
+									<h6>极速智能诊断</h6>
+									<p>大模型驱动的低剂量 CT 智能处理，毫秒级完成影像优化与病灶检测，让诊断效率呈几何级提升。</p>
+								</div> <!-- /.block-style-six -->
+							</div>
+							<div class="col-lg-4 col-sm-6" data-aos="fade-up" data-aos-delay="200">
+								<div class="block-style-six text-center mt-40">
+									<div class="icon"><i class="bi bi-check-lg"></i></div>
+									<h6>普惠医疗定价</h6>
+									<p>高性价比 AI 诊断方案，助力各级医疗机构以合理成本实现精准诊疗，推动优质医疗资源普惠化。</p>
+								</div> <!-- /.block-style-six -->
+							</div>
+						</div>
+					</div> <!-- /.bg-wrapper -->
+				</div> <!-- /.container -->
+				<img src="images/shape/shape_10.svg" alt="" class="shapes shape-one">
+				<img src="images/shape/shape_11.svg" alt="" class="shapes shape-two">
+			</div> <!-- /.fancy-feature-six -->
+
+
+
+			<!--
+			=====================================================
+				Feedback Slider Three
+			=====================================================
+			-->
+			<div class="feedback-section-three position-relative mt-250 lg-mt-130" data-aos="fade-up">
+				<div class="container">
+					<div class="slider-wrapper">
+						<div class="feedback_slider_three">
+							<div class="item">
+								<div class="feedback-block-three d-md-flex">
+									<div class="img-meta">
+										<img src="images/media/img_05.jpg" alt="">
+									</div>
+									<div class="text-wrapper">
+										<div class="icon d-flex justify-content-center align-items-center"><img src="images/icon/icon_15.svg" alt=""></div>
+										<p>低剂量 CT 的噪声曾让我们对早期病灶识别如履薄冰，<a href="#">LDCT-AID</a> 的智能降噪与病灶检测技术，不仅把我们从繁琐的人工阅片里解放出来，更给了患者"早发现早治愈"的希望 —— 这是技术对医疗最温暖的赋能。</p>
+										<div class="name">
+											<h6>李明</h6>
+											<span>主任医师，某三甲医院影像科</span>
+										</div> <!-- /.name -->
+									</div> <!-- /.text-wrapper -->
+								</div> <!-- /.feedback-block-three -->
+							</div>
+							<div class="item">
+								<div class="feedback-block-three d-md-flex">
+									<div class="img-meta">
+										<img src="images/media/img_06.jpg" alt="">
+									</div>
+									<div class="text-wrapper">
+										<div class="icon d-flex justify-content-center align-items-center"><img src="images/icon/icon_15.svg" alt=""></div>
+										<p>在我们社区医院，以前做低剂量 CT 总怕因图像质量耽误诊断，不少患者宁愿多花钱往大医院跑。自从用了  <a href="#">LDCT-AID</a> ，不管是肺小结节还是肝微小病灶，AI 都能清晰标记，报告里还附带恶性风险评估。</p>
+										<div class="name">
+											<h6>张伟 </h6>
+											<span>影像科主任，某社区卫生服务中心</span>
+										</div> <!-- /.name -->
+									</div> <!-- /.text-wrapper -->
+								</div> <!-- /.feedback-block-three -->
+							</div>
+							<div class="item">
+								<div class="feedback-block-three d-md-flex">
+									<div class="img-meta">
+										<img src="images/media/img_07.jpg" alt="">
+									</div>
+									<div class="text-wrapper">
+										<div class="icon d-flex justify-content-center align-items-center"><img src="images/icon/icon_15.svg" alt=""></div>
+										<p>我们妇幼医院接诊的多是儿童、孕产妇，为控辐射选低剂量 CT，却常因图像噪声看不清细微病灶。用 <a href="#">LDCT-AID </a>后，噪声被精准过滤，2 毫米的肝、肺微小结节都能清晰识别，早诊率升 35%，阅片时间省 40%，家长们都说既安全又查得准</p>
+										<div class="name">
+											<h6>王主任 </h6>
+											<span>妇幼医院影像科</span>
+										</div> <!-- /.name -->
+									</div> <!-- /.text-wrapper -->
+								</div> <!-- /.feedback-block-three -->
+							</div>
+						</div> <!-- /.feedback_slider_three -->
+					</div> <!-- /.slider-wrapper -->
+				</div> <!-- /.container -->
+				<img src="images/shape/shape_12.svg" alt="" class="shapes shape-one">
+			</div> <!-- /.feedback-section-three -->
+
+
+
+			<!--
+			=====================================================
+				Feature Section Seven
+			=====================================================
+			-->
+			<div class="fancy-feature-seven mt-140 lg-mt-50 sm-mt-20">
+				<div class="container">
+					<div class="row">
+						<div class="col-xxl-4 col-lg-5">
+							<div class="block-style-five md-pb-50" data-aos="fade-right">
+								<div class="title-style-one">
+									<div class="sc-title-three">问答专区</div>
+									<h2 class="main-title">关于 LDCT-AID，您想知道的都在这里。</h2>
+								</div> <!-- /.title-style-one -->
+								<p class="pt-10 pb-15">若未找到答案，可发送消息咨询任何疑问。</p>
+								<a href="contact-us.html" class="btn-five ripple-btn">联系我们</a>
+							</div> <!-- /.block-style-five -->
+						</div>
+
+						<div class="col-lg-7 col-lg-6 ms-auto" data-aos="fade-left">
+							<div class="accordion accordion-style-one" id="accordionOne">
+								<div class="accordion-item">
+								    <div class="accordion-header" id="headingOne">
+								      	<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+								        	什么是 LDCT-AID？
+								      	</button>
+								    </div>
+								    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionOne">
+								    	<div class="accordion-body">
+								        	<p>LDCT-AID 是专注于低剂量 CT 智能诊断的 AI 解决方案，通过大模型多模态融合技术，实现低剂量 CT 影像降噪、病灶智能检测与结构化报告生成，助力临床高效精准诊断。 </p>
+								    	</div>
+								    </div>
+							  	</div>
+							  	<div class="accordion-item">
+								    <div class="accordion-header" id="headingTwo">
+								      	<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+								        	LDCT-AID 适用于哪些医疗场景？
+								      	</button>
+								    </div>
+								    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionOne">
+								      	<div class="accordion-body">
+								        	<p>适用于各级医疗机构的低剂量 CT 诊疗场景，包括肺部、肝脏等脏器的早期病变筛查，尤其在基层医院、体检中心、专科医院的低剂量 CT 诊断中优势显著，可提升早诊率、降低漏诊率。 </p>
+								    	</div>
+								    </div>
+							  	</div>
+							  	<div class="accordion-item">
+								    <div class="accordion-header" id="headingThree">
+								   		<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+								        	如何将 LDCT-AID 集成到现有医疗系统？
+								      	</button>
+								    </div>
+								    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionOne">
+								    	<div class="accordion-body">
+								        	<p>LDCT-AID 支持 DICOM 标准接口，可快速与医院 PACS、RIS 系统对接，部署方式灵活（本地 / 云端），技术团队提供全流程集成指导，通常 1-2 周即可完成上线。</p>
+								    	</div>
+								    </div>
+								</div>
+								<div class="accordion-item">
+								    <div class="accordion-header" id="headingFour">
+								   		<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+								        	LDCT-AID 的诊断准确率如何？
+								      	</button>
+								    </div>
+								    <div id="collapseFour" class="accordion-collapse collapse show" aria-labelledby="headingFour" data-bs-parent="#accordionOne">
+								    	<div class="accordion-body">
+								        	<p>在多中心临床验证中，其微小病灶（≥3mm）检出准确率达 92%，噪声抑制后影像质量评分提升 40%，早诊率较传统人工阅片提高 35%，数据经权威医学机构认证。 </p>
+								    	</div>
+								    </div>
+								</div>
+								<div class="accordion-item">
+								    <div class="accordion-header" id="headingFive">
+								   		<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+								        	患者医疗数据在 LDCT-AID 中如何保障安全？
+								      	</button>
+								    </div>
+								    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionOne">
+								    	<div class="accordion-body">
+								        	<p>系统遵循 HIPAA、GDPR 等医疗数据安全标准，采用端到端加密、本地脱敏计算等技术，确保患者影像与诊断信息仅用于临床决策，无数据泄露风险。 </p>
+								    	</div>
+								    </div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div> <!-- /.container -->
+				<img src="images/shape/shape_13.svg" alt="" class="shapes shape-one">
+				<img src="images/shape/shape_14.svg" alt="" class="shapes shape-two">
+				<img src="images/shape/shape_15.svg" alt="" class="shapes shape-three">
+			</div> <!-- /.fancy-feature-seven -->
+
+
+
+			<!--
+			=====================================================
+				Blog Section Two
+			=====================================================
+			-->
+			<div class="blog-section-two mt-110 lg-mt-50">
+				<div class="container">
+					<div class="title-style-one text-center mb-50 lg-mb-20" data-aos="fade-up">
+						<div class="sc-title-three">行业动态</div>
+						<h2 class="main-title">LDCT-AID 最新资讯 </h2>
+					</div> <!-- /.title-style-one -->
+
+					<div class="row gx-xxl-5">
+						<div class="col-lg-4 col-sm-6 d-flex" data-aos="fade-up">
+							<article class="blog-meta-two mt-30">
+								<figure class="post-img m0"><a href="blog-details.html" class="w-100 d-block"><img src="images/blog/blog_img_04.png" alt="" class="w-100 tran4s"></a></figure>
+								<div class="post-data">
+									<div class="post-tag"><a href="blog-details.html">2025.10.20</a></div>
+									<a href="blog-details.html" class="blog-title"><h5>LDCT-AID 2.0 版本重磅发布：多模态融合诊断再升级</h5></a>
+									<a href="blog-details.html" class="read-btn tran3s">[继续阅读] <i class="fas fa-chevron-right"></i></a>
+								</div> <!-- /.post-data -->
+							</article>
+						</div>
+						<div class="col-lg-4 col-sm-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+							<article class="blog-meta-two mt-30">
+								<figure class="post-img m0"><a href="blog-details.html" class="w-100 d-block"><img src="images/blog/blog_img_05.png" alt="" class="w-100 tran4s"></a></figure>
+								<div class="post-data">
+									<div class="post-tag"><a href="blog-details.html">2025.10.15</a></div>
+									<a href="blog-details.html" class="blog-title"><h5>LDCT-AID 与某三甲胸科医院达成深度合作，早诊率提升 40%</h5></a>
+									<a href="blog-details.html" class="read-btn tran3s">[继续阅读] <i class="fas fa-chevron-right"></i></a>
+								</div> <!-- /.post-data -->
+							</article>
+						</div>
+						<div class="col-lg-4 col-sm-6 d-flex" data-aos="fade-up" data-aos-delay="200">
+							<article class="blog-meta-two mt-30">
+								<figure class="post-img m0"><a href="blog-details.html" class="w-100 d-block"><img src="images/blog/blog_img_06.png" alt="" class="w-100 tran4s"></a></figure>
+								<div class="post-data">
+									<div class="post-tag"><a href="blog-details.html">2025.10.10</a></div>
+									<a href="blog-details.html" class="blog-title"><h5>LDCT-AID 与医疗设备厂商达成合作，预装至新款低剂量 CT 机型</h5></a>
+									<a href="blog-details.html" class="read-btn tran3s">[继续阅读] <i class="fas fa-chevron-right"></i></a>
+								</div> <!-- /.post-data -->
+							</article>
+						</div>
+						<div class="col-lg-4 col-sm-6 d-lg-none d-flex" style="display: none !important;" data-aos="fade-up">
+							<article class="blog-meta-two mt-30">
+								<figure class="post-img m0"><a href="blog-details.html" class="w-100 d-block"><img src="images/blog/blog_img_05.png" alt="" class="w-100 tran4s"></a></figure>
+								<div class="post-data">
+									<div class="post-tag"><a href="blog-details.html">23 Apr, 2021</a></div>
+									<a href="blog-details.html" class="blog-title"><h5>Truck Side Advertising Isn It Time for action.</h5></a>
+									<a href="blog-details.html" class="read-btn tran3s">Continue Reading <i class="fas fa-chevron-right"></i></a>
+								</div> <!-- /.post-data -->
+							</article>
+						</div>
+					</div>
+				</div>
+			</div> <!-- /.blog-section-two -->
+
+
+
+
+			<!-- 
+			=============================================
+				Fancy Short Banner One
+			============================================== 
+			-->
+			<div class="fancy-short-banner-one position-relative mt-160 lg-mt-100 md-mt-80">
+				<div class="container">
+					<div class="bg-wrapper">
+						<div class="row align-items-center gx-xxl-5">
+							<div class="col-lg-6 text-center text-lg-start" data-aos="fade-right">
+								<div class="sub-title">合作咨询</div>
+								<h3 class="pe-xl-5 md-pb-20">有任何疑问？联系我们</h3>
+							</div>
+							<div class="col-lg-6 text-center text-lg-end" data-aos="fade-left">
+								<a href="contact-us.html" class="msg-btn tran3s">联系我们</a>
+							</div>
+						</div>
+					</div> <!-- /.bg-wrapper -->
+				</div> <!-- /.container -->
+				<img src="images/shape/shape_10.svg" alt="" class="shapes shape-one">
+				<img src="images/shape/shape_11.svg" alt="" class="shapes shape-two">
+			</div> <!-- /.fancy-short-banner-one -->
+
+
+		
+
+			<!--
+			=====================================================
+				Footer
+			=====================================================
+			-->
+			<div class="footer-style-two theme-basic-footer">
+				<img src="images/shape/shape_16.svg" alt="" class="shapes shape-one">
+				<img src="images/shape/shape_17.svg" alt="" class="shapes shape-two">
+				<div class="container">
+					<div class="inner-wrapper">
+						<div class="row">
+							<div class="col-lg-3 footer-intro mb-40">
+								<div class="logo"><a href="index.html"><img src="images/logo/logo-2-light.png" alt="" width="170"></a></div>
+								<p>们将助力您的医疗机构在低剂量 CT 诊疗领域突破瓶颈，实现诊疗效率与精准度双提升，迈向更高水平的临床服务。</p>
+								<ul class="d-flex social-icon style-none">
+									<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+									<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+									<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+								</ul>
+							</div>
+							<div class="col-lg-2 col-md-3 col-sm-6 mb-30">
+								<h5 class="footer-title">链接</h5>
+								<ul class="footer-nav-link style-none">
+									<li><a href="index.html">首页</a></li>
+									<li><a href="ctjz.html">CT降噪</a></li>
+									<li><a href="ycjc.html">异常检测</a></li>
+									<li><a href="bggl.html">报告管理</a></li>
+									<li><a href="AIzs.html">AI助手</a></li>
+								</ul>
+							</div>
+							<div class="col-xl-2 col-md-3 col-sm-6 mb-30">
+								<h5 class="footer-title">法律合规</h5>
+								<ul class="footer-nav-link style-none">
+									<li><a href="faq.html">使用条款</a></li>
+									<li><a href="faq.html">服务条款</a></li>
+									<li><a href="faq.html">隐私政策</a></li>
+									<li><a href="faq.html">Cookie 政策</a></li>
+								</ul>
+							</div>
+							<div class="col-xl-5 col-lg-4 col-md-6 mb-30">
+								<div class="newsletter ps-xl-5">
+									<h5 class="footer-title">订阅我们的新闻通讯</h5>
+									<p>加入超过 68,000 人接收我们的电子邮件</p>
+									<form action="#">
+										<input type="email" placeholder="输入您的电子邮件">
+										<button>订阅</button>
+									</form>
+									<div class="info">我们仅发送有趣和相关的电子邮件。</div>
+								</div> <!-- /.newsletter -->
+							</div>
+						</div>
+
+						<div class="bottom-footer">
+							<div class="d-lg-flex justify-content-between align-items-center">
+								<ul class="order-lg-1 pb-15 d-flex justify-content-center footer-nav style-none">
+									<li><a href="faq.html">隐私政策 &amp; 使用条款</a></li>
+									<li><a href="faq.html">常见问题</a></li>
+									<li><a href="contact-us.html">联系我们</a></li>
+								</ul>
+								<p class="copyright text-center order-lg-0 pb-15">版权所有 @2025 LDCT-AID</p>
+							</div>
+						</div>
+					</div> <!-- /.inner-wrapper -->
+				</div>
+			</div> <!-- /.footer-style-two -->
+
+			<button class="scroll-top">
+				<i class="bi bi-arrow-up-short"></i>
+			</button>
+			
+			
+
+
+		<!-- Optional JavaScript _____________________________  -->
+
+    	<!-- jQuery first, then Bootstrap JS -->
+    	<!-- jQuery -->
+		<script src="vendor/jquery.min.js"></script>
+		<!-- Bootstrap JS -->
+		<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+		<!-- AOS js -->
+		<script src="vendor/aos-next/dist/aos.js"></script>
+		<!-- Slick Slider -->
+		<script src="vendor/slick/slick.min.js"></script>
+		<!-- js Counter -->
+		<script src="vendor/jquery.counterup.min.js"></script>
+		<script src="vendor/jquery.waypoints.min.js"></script>
+		<!-- Fancybox -->
+		<script src="vendor/fancybox/dist/jquery.fancybox.min.js"></script>
+		<!-- Progress Bar js -->
+		<script src="vendor/skills-master/jquery.skills.js"></script>
+
+		<!-- Theme js -->
+		<script src="js/theme.js"></script>
+		</div> <!-- /.main-page-wrapper -->
+	</body>
+</html>
